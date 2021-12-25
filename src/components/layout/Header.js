@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
+import Image from '../elements/Image';
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -112,7 +113,13 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Documentation</Link>
+                      <Link to="#0" onClick={closeMenu}>Pricing</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>Privacy Policy</Link>
+                    </li>
+                    <li>
+                      <Link to="#0" onClick={closeMenu}>Contact Us</Link>
                     </li>
                   </ul>
                   {!hideSignin &&
@@ -120,7 +127,10 @@ const Header = ({
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
+                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>
+                          <Image src={require('./../../assets/images/btn_base.png')} alt={'login-with-line'} width={25}/>    
+                            &nbsp;เข้าสู่ระบบ
+                          </Link>
                       </li>
                     </ul>}
                 </div>
