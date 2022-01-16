@@ -2,6 +2,8 @@ import React from "react";
 import Input from "./Input";
 import JSONDATA from './MOCK_DATA.json'
 import { useState } from "react";
+import { AiOutlineSearch } from "react-icons/ai"
+import { IoIosClose } from "react-icons/io"
 
 
 const SearchBar = () => {
@@ -10,9 +12,19 @@ const SearchBar = () => {
 
     return (
         <>
+        <div className="has-icon-left has-icon-right">
+        <Input className='form-input' type='search' placeholder='Search...'/>
+        <AiOutlineSearch/>
+        <span className="svg-container"><IoIosClose /></span>
+        </div>
+        <div className="form-hint"><b>test</b></div>
+
         
-        <div className="container">
-            <Input className="form-input" type='textarea' placeholder="Search..." onChange={event => {setSearchTerm(event.target.value)}}/>
+      
+
+        <div>
+            
+      
             {JSONDATA.filter((val)=> {
 
                 if (searchTerm === "") {

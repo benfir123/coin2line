@@ -63,7 +63,7 @@ $button-loading--thickness:		2px;		// button loading spinner, stroke width (.but
 
 // Forms: color
 $form--color: (
-	input: 						get-color(dark, 1),
+	input: 						get-color(light, 2),
 	input-placeholder:		 	get-color(light, 2),
 	label: 						get-color(light, 3),
     check-radio: 				get-color(light, 2),
@@ -76,7 +76,7 @@ $form--color: (
 
 // Forms: background color
 $form--bg: (
-	input: 							get-color(light, 1),
+	input: 							get-color(dark, 1),
 	input-focus: 					null,
 	input-disabled: 				get-color(dark, 3),
 	check-radio-checked: 			get-color(primary, 1),
@@ -97,8 +97,8 @@ $form--bg: (
 
 // Forms: border color
 $form--border: (
-	input: 						get-color(dark, 1),
-	input-hover: 				get-color(light, 3),
+	input: 						get-color(light, 3),
+	input-hover: 				get-color(light, 2),
 	input-focus: 				get-color(primary, 1),
 	input-disabled: 			get-color(dark, 2),
 	// ↓ Inverted colors
@@ -135,7 +135,7 @@ $form--weight: (
 // More forms settings
 $form--padding-h: 	 16px;		// form, inner left and right padding
 $form-sm--padding-h: 12px;		// form (small), inner left and right padding
-$form--radius: 		 0;			// form radius (never use null)
+$form--radius: 		 6px;			// form radius (never use null)
 $form-hint--margin:  8px;		// .form-hint top margin
 $range-thumb-size:   36px;      // .form-slider, thumb size
 
